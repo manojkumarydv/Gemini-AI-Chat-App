@@ -42,7 +42,7 @@ app.post('/api/content', async (req, res) => {
   }
 });
 
-app.get('/api/hello', async(res,res) => {
+app.get('/api/hello', async(req,res) => {
   res.send("heelo fro backend");
 }
 
