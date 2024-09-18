@@ -42,6 +42,10 @@ app.post('/api/content', async (req, res) => {
   }
 });
 
+app.get('/api/hello', async(res,res) => {
+  res.send("heelo fro backend");
+}
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
