@@ -13,7 +13,7 @@ const StoryForm = () => {
     setError(null);
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/content`, { question: prompt });
+      const response = await axios.post('https://aichat-v689.onrender.com/api/content', { question: prompt });
       setStory(response.data.result);
       setLoading(false);
     } catch (err) {
